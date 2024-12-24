@@ -61,8 +61,8 @@ html {
 
 @media (max-width: 768px) {
     .nav {
-        flex-direction: flex;
         justify-content: center;
+        margin: 40px 0px;
     }
     
     .nav-item {
@@ -307,7 +307,7 @@ html {
 
     .section {
         padding: 0px 0px; /* Adjust padding for sections */
-        margin-bottom: 0vh;
+        margin-bottom: -50px;
         
     }
 }
@@ -324,7 +324,7 @@ html {
 
     .section-content p {
         font-size: 2rem;
-        margin-top: -15px;
+        margin-bottom: -50px;
     }
 
     .tokenomics h2 {
@@ -586,7 +586,13 @@ body .value-output {
 }
 
 
-    
+ @media (max-width: 768px) {
+/* Dotted Line Separator */
+.dotted-line {
+    height: 10vh; /* Full screen height */
+}
+
+} 
 
 
 
