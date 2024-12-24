@@ -78,6 +78,25 @@ html {
     }
 }
 
+@media (max-width: 480px) {
+    .nav {
+        justify-content: center;
+        margin: 40px 0px;
+    }
+    
+    .nav-item {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .nav-item:nth-child(4) {
+
+        text-align: center;     /* Center it */
+        margin-top: -5px;       /* Add some space above it */
+    }
+}
+
 .section {
     text-align: center;
     padding: 5px 0px;
