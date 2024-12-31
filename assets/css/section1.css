@@ -1,0 +1,133 @@
+.section {
+    text-align: center;
+    padding: 5px 0px;
+}
+
+.sheep-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds space between text and image */
+    text-align: center;
+}
+
+.sheep-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheep-wrapper img {
+    max-width: 250px;
+    height: auto;
+    transform: translateX(var(--sheep-offset, -50px)); /* Adjustable position */
+    transition: transform 0.3s ease; /* Smooth movement */
+}
+
+.sheep-wrapper h2 {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 14rem;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    transform: translateX(var(--sheep-offset, 50px)); /* Adjustable position */
+    margin: 0;
+}
+
+.sheep-wrapper p {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 4rem;
+    color: #d4a144;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    margin: -70px 0px 0px 100px;
+}
+
+.section-content p {
+    font-family: 'Darumadrop One', cursive;
+    text-align: center;
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    margin-top: 45px;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 3rem;
+    }
+
+    .header p {
+        font-size: 1.8rem;
+    }
+
+    .section-content p {
+        font-size: 1.8rem;
+    }
+
+    .tokenomics {
+        padding: 10px 10px;
+        margin: 0px auto;
+        font-size: 1rem;
+    }
+
+    .sheep-wrapper {
+        flex-direction: row; /* Ensures the layout stays horizontal */
+        margin: 50px;
+        gap: 15px; /* Reduces space between text and image */
+    }
+}
+
+/* Mobile-Specific Updates */
+@media (max-width: 480px) {
+    .header h2 {
+        font-size: 3.5rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .section-content p {
+        font-size: 2rem;
+        margin-bottom: -50px;
+    }
+
+    .tokenomics h2 {
+        font-size: 2rem;
+    }
+
+    .tokenomics p {
+        margin: 10px;
+        font-size: 1.2rem;
+    }
+
+    .sheep-wrapper h2 {
+        font-family: 'Darumadrop One', cursive;
+        font-size: 5rem;
+        transform: translateX(var(--sheep-offset, 35px)); /* Adjustable position */
+    }
+
+    .sheep-wrapper p {
+        font-size: 1.2rem;
+        color: #d4a144;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        margin: -20px 0px 0px 90px;
+    }
+
+    .sheep-wrapper img {
+        max-width: 160px;
+        transform: translateX(var(--sheep-offset, -45px)); /* Adjustable position */
+    }
+
+    /* Reduce spacing between sections */
+    .tokenomics {
+        margin: 10px 20px;
+    }
+
+    .section {
+        padding: 0px 0px; /* Adjust padding for sections */
+        margin-bottom: -50px;
+    }
+}
+

@@ -1,0 +1,328 @@
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title {
+    font-size: 3.5rem;
+    color: #00c6ff;
+    text-shadow: 0 4px 8px rgba(0, 198, 255, 0.5);
+    margin-bottom: 40px;
+}
+
+/* Timeline Styles */
+.timeline {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.timeline-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.timeline-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 4px;
+    background: linear-gradient(to bottom, #007bff, #00c6ff);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-event {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 30px 0;
+    width: 90%;
+}
+
+.timeline-event:nth-child(odd) {
+    justify-content: flex-start;
+}
+
+.timeline-content {
+    background: #1e2a38;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #ddd;
+    max-width: 400px;
+    z-index: 2;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #00c6ff;
+}
+
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 198, 255, 0.5);
+}
+
+.timeline-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #007bff, #00c6ff);
+    border-radius: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-wrapper::before {
+        left: 20px;
+    }
+
+    .timeline-event {
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    .timeline-content {
+        margin-left: 50px;
+        max-width: 80%;
+    }
+
+    .timeline-dot {
+        left: 20px;
+    }
+}
+
+.roadmap {
+    padding: 10px;
+    padding-left: 50vh;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.phases {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.phase {
+    flex: 1;
+    min-width: 250px;
+    max-width: 30%;
+    background: linear-gradient(to bottom right, #2b5876, #4e4376);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.phase:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+}
+
+.phase-header {
+    background: #d4a144;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.phase-content {
+    padding: 20px;
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Closing Section */
+.closing, .connect {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.connect a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.connect a:hover {
+    text-decoration: underline;
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border-left: 3px solid #d4a144;
+}
+
+.timeline-item {
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #d4a144;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #d4a144;
+    text-shadow: -0.5px -0.5px 0 black, 0.5px -0.5px 0 black, -0.5px 0.5px 0 black, 0.5px 0.5px 0 black;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.timeline-box {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 1.3rem;
+    color: #555;
+}
+
+.sub-heading {
+    text-align: center;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 3rem;
+    color: #d4a144;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+/* Additional Info Styling */
+.info {
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+
+/* About Section */
+#about-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 15px;
+    border: 2px dashed #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    line-height: 1.7;
+}
+
+.about-heading {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.about-content {
+    font-family: 'Playpen Sans', Arial, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #f7f7f7;
+    text-align: justify;
+}
+
+.about-body {
+    margin-top: 25px;
+}
+
+.body-text {
+    margin-bottom: 20px;
+    color: #f7f7f7;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.intro-text {
+    font-family: 'Playpen Sans', Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #d4a144;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.about-content p {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    #about-section {
+        padding: 30px 15px;
+        font-size: 1rem;
+    }
+
+    #about-section .about-heading {
+        font-size: 2rem;
+    }
+
+    #about-section .about-content {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #about-section {
+        padding: 20px 10px;
+    }
+
+    #about-section .about-heading {
+        font-size: 1.8rem;
+    }
+
+    #about-section .about-content {
+        font-size: 1.1rem;
+    }
+}
+
+.text{
+    margin-bottom:10vh;
+}

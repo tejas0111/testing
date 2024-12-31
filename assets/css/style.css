@@ -30,7 +30,9 @@ html {
 }
 
 
-
+.header {
+display: none;
+}
 /* Navigation styling */
 .nav {
     display: flex;
@@ -129,7 +131,7 @@ html {
 
 .sheep-wrapper h2 {
     font-family: 'Darumadrop One', cursive;
-    font-size: 12rem;
+    font-size: 14rem;
     color: white;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     transform: translateX(var(--sheep-offset, 50px)); /* Adjustable position */
@@ -147,10 +149,10 @@ html {
 .section-content p {
     font-family: 'Darumadrop One', cursive;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #ffffff;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
-    margin-top: 25px; /* Decrease the margin between heading and paragraph */
+    margin-top: 35px; /* Decrease the margin between heading and paragraph */
 }
 
 
@@ -364,7 +366,7 @@ html {
 /* Section Heading */
 .section-heading {
     font-family: 'Darumadrop One', cursive;
-    font-size: 3rem;
+    font-size: 6rem;
     color: white;
     text-align: center;
     margin-bottom: 20px;
@@ -853,7 +855,14 @@ body .value-output {
 }
 
 
-
+.sub-heading {
+    text-align: center;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 3rem;
+    color: #d4a144;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    margin: -70px 0px 0px 100px;
+}
 
 
 
