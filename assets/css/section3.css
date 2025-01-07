@@ -32,7 +32,6 @@ h1, h2 {
     bottom: 0;
     left: 50%;
     width: 4px;
-    background: linear-gradient(to bottom, #007bff, #00c6ff);
     transform: translateX(-50%);
     z-index: 1;
 }
@@ -51,7 +50,7 @@ h1, h2 {
 }
 
 .timeline-content {
-    background: #1e2a38;
+    background: #e0b74b;
     padding: 15px 25px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -67,7 +66,7 @@ h1, h2 {
 .timeline-content h3 {
     margin: 0 0 10px;
     font-size: 1.5rem;
-    color: #00c6ff;
+    color: #e0b74b;
 }
 
 .timeline-content:hover {
@@ -127,20 +126,15 @@ h1, h2 {
     flex: 1;
     min-width: 250px;
     max-width: 30%;
-    background: linear-gradient(to bottom right, #2b5876, #4e4376);
+    background: linear-gradient(to bottom right, #e0b74b, #b77f2a); /* Phase box color */
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: none; /* Removed box-shadow */
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.phase:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+    transition: transform 0.5s, box-shadow 0.5s;
 }
 
 .phase-header {
-    background: #d4a144;
+    background: #d4a144; /* Same color for header to match phase */
     color: white;
     font-size: 1.5rem;
     padding: 15px;
@@ -163,7 +157,7 @@ h1, h2 {
 }
 
 .connect a {
-    color: #00c6ff;
+    color: #2980b9;
     text-decoration: none;
     font-weight: bold;
 }

@@ -176,6 +176,11 @@ html {
     .header p {
         font-size: 0.8rem;
     }
+
+    .section-heading {
+        font-size: 3rem;
+    }
+
 }
 
 /* Footer */
