@@ -18,13 +18,6 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Keyframe animation for smooth gradient transition */
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -130,11 +123,12 @@ html {
 /* Dotted Line Separator */
 .dotted-line {
     width: 100%;
-    height: 0vh;
+    height: 0;
     border-bottom: 2.5px dotted #fff;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 20px 0 0 0; /* 20px space above the line, no space below */
 }
+
 
 /* Default: Hide on larger screens */
 .header {
@@ -166,9 +160,21 @@ html {
         margin: -10px 0;
         font-family: 'Playpen Sans', Arial, sans-serif;
     }
+
+.dotted-line {
+    margin: 30% 0; /* 20px space above the line, no space below */
+}
+    .sub-heading{
+        font-size: 0.5rem;
+    }
+
 }
 
 @media (max-width: 480px) {
+.dotted-line {
+    margin: 30% 0; /* 20px space above the line, no space below */
+}
+
     .header h2 {
         font-size: 2rem;
     }
@@ -178,7 +184,11 @@ html {
     }
 
     .section-heading {
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+    
+    .sub-heading{
+        font-size: 1.2rem;
     }
 
 }

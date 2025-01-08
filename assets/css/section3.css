@@ -3,17 +3,10 @@ h1, h2 {
     margin: 20px 0;
 }
 
-.title {
-    font-size: 3.5rem;
-    color: #00c6ff;
-    text-shadow: 0 4px 8px rgba(0, 198, 255, 0.5);
-    margin-bottom: 40px;
-}
 
 /* Timeline Styles */
 .timeline {
-    margin: 50px auto;
-    padding: 20px;
+    margin: 0px auto;
     max-width: 1200px;
 }
 
@@ -22,7 +15,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 0px;
 }
 
 .timeline-wrapper::before {
@@ -64,7 +57,7 @@ h1, h2 {
 }
 
 .timeline-content h3 {
-    margin: 0 0 10px;
+    margin: 0px;
     font-size: 1.5rem;
     color: #e0b74b;
 }
@@ -87,35 +80,47 @@ h1, h2 {
     box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-    .timeline-wrapper::before {
-        left: 20px;
+    .timeline {
+        max-width: 90%;
     }
 
-    .timeline-event {
-        justify-content: flex-start;
-        padding-left: 40px;
+    .timeline-wrapper::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .timeline-event,
+    .timeline-event:nth-child(odd) {
+        justify-content: center;
+        padding-left: 0;
+        width: 100%;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
     }
 
     .timeline-content {
-        margin-left: 50px;
+        margin: 0 auto;
         max-width: 80%;
+        text-align: center;
     }
 
     .timeline-dot {
-        left: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
+
 .roadmap {
     padding: 10px;
-    padding-left: 50vh;
-    margin: 10px auto;
+    margin: 0px auto;
+    margin-bottom: 100px;
     width: 50%;
 }
 
 .phases {
+    margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -125,7 +130,7 @@ h1, h2 {
 .phase {
     flex: 1;
     min-width: 250px;
-    max-width: 30%;
+    max-width: 25%;
     background: linear-gradient(to bottom right, #e0b74b, #b77f2a); /* Phase box color */
     border-radius: 15px;
     box-shadow: none; /* Removed box-shadow */
@@ -183,7 +188,7 @@ h1, h2 {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -11px;
+    left: -10px;
     top: 5px;
     width: 20px;
     height: 20px;
